@@ -16,4 +16,12 @@ px:PossibleXLegalParticipantExtensionShape a sh:NodeShape ;
             sh:path px:mailAddress ;
             sh:description "The e-mail address is required to get registration confirmation and will be publicly accessible in the catalog."@en ;
             sh:pattern "^((?!\\.)[\\w\\-_.]*[^.])(@\\w+)(\\.\\w+(\\.\\w+)?[^.\\W])$" ;
+        ],
+        [
+            sh:datatype xsd:string ;
+            sh:minCount 1 ;
+            sh:maxCount 1 ;
+            sh:name "DAPS Identifier"@en ;
+            sh:path px:dapsId ;
+            sh:description "The DAPS ID that was attested to this participant by the POSSIBLE DAPS Server."@en ;
         ] .
